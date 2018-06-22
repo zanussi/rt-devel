@@ -22,6 +22,12 @@
 #include <linux/rculist.h>
 #include <linux/tracefs.h>
 
+#define CREATE_TRACE_POINTS
+#include <trace/events/msi_lat.h>
+EXPORT_TRACEPOINT_SYMBOL(msi_lat);
+EXPORT_TRACEPOINT_SYMBOL(msi_lat_samp0);
+EXPORT_TRACEPOINT_SYMBOL(msi_lat_samp1);
+
 #include "tracing_map.h"
 #include "trace.h"
 
